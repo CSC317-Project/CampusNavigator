@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Indoor Navigation App</title>
+    <style>
+        #map {
+            height: 300px;
+            width: 100%;
+        }
+
+        .circle-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .circle-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 20px;
+        }
+
+        .circle-icon img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            border: 2px solid #333;
+            margin-bottom: 10px;
+        }
+
+        .circle-icon p {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com/maps?q=California">Google Maps</a>
+
+    <div id="map"></div>
+    <header>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+    <main>
+        <div class="categories">
+            <h2>Categories</h2>
+            <div class="circle-icons">
+                <div class="circle-icon">
+                    <img src="category1-icon.png" alt="Category 1">
+                    <p>Category 1</p>
+                </div>
+                <div class="circle-icon">
+                    <img src="category2-icon.png" alt="Category 2">
+                    <p>Category 2</p>
+                </div>
+                <div class="circle-icon">
+                    <img src="category3-icon.png" alt="Category 3">
+                    <p>Category 3</p>
+                </div>
+                <div class="circle-icon">
+                    <img src="category4-icon.png" alt="Category 4">
+                    <p>Category 4</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="script.js"></script>
+</body>
+</html>
